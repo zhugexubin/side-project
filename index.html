@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me</title>
+  <title>Zhu Gexubin - About Me</title>
   <style>
     :root {
       font-family: Arial, Helvetica, sans-serif;
@@ -13,6 +13,20 @@
       margin: 0;
       background: #f5f7fb;
       color: #1f2937;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: 8px;
+      background: #111827;
+      color: #ffffff;
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+
+    .skip-link:focus {
+      left: 8px;
     }
 
     main {
@@ -55,7 +69,8 @@
   </style>
 </head>
 <body>
-  <main>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <main id="main-content">
     <section class="intro">
       <h1>Hello, I'm Zhu Gexubin</h1>
       <p>
